@@ -8,3 +8,13 @@ C:\Users\Aitor\source\repos\WindowsForm4_treeviews\WindowsForm4_treeviews\obj\De
 C:\Users\Aitor\source\repos\WindowsForm4_treeviews\WindowsForm4_treeviews\obj\Debug\WindowsForm4_treeviews.csproj.CoreCompileInputs.cache
 C:\Users\Aitor\source\repos\WindowsForm4_treeviews\WindowsForm4_treeviews\obj\Debug\WindowsForm4_treeviews.exe
 C:\Users\Aitor\source\repos\WindowsForm4_treeviews\WindowsForm4_treeviews\obj\Debug\WindowsForm4_treeviews.pdb
+D:\dev\wfPractices\WFormsPractice4_treeviews\WindowsForm4_treeviews\bin\Debug\WindowsForm4_treeviews.exe.config
+D:\dev\wfPractices\WFormsPractice4_treeviews\WindowsForm4_treeviews\bin\Debug\WindowsForm4_treeviews.exe
+D:\dev\wfPractices\WFormsPractice4_treeviews\WindowsForm4_treeviews\bin\Debug\WindowsForm4_treeviews.pdb
+D:\dev\wfPractices\WFormsPractice4_treeviews\WindowsForm4_treeviews\obj\Debug\WindowsForm4_treeviews.csprojAssemblyReference.cache
+D:\dev\wfPractices\WFormsPractice4_treeviews\WindowsForm4_treeviews\obj\Debug\WindowsForm4_treeviews.Form1.resources
+D:\dev\wfPractices\WFormsPractice4_treeviews\WindowsForm4_treeviews\obj\Debug\WindowsForm4_treeviews.Properties.Resources.resources
+D:\dev\wfPractices\WFormsPractice4_treeviews\WindowsForm4_treeviews\obj\Debug\WindowsForm4_treeviews.csproj.GenerateResource.cache
+D:\dev\wfPractices\WFormsPractice4_treeviews\WindowsForm4_treeviews\obj\Debug\WindowsForm4_treeviews.csproj.CoreCompileInputs.cache
+D:\dev\wfPractices\WFormsPractice4_treeviews\WindowsForm4_treeviews\obj\Debug\WindowsForm4_treeviews.exe
+D:\dev\wfPractices\WFormsPractice4_treeviews\WindowsForm4_treeviews\obj\Debug\WindowsForm4_treeviews.pdb
