@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Àrea del triangle");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Àrea Rectangle");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Àrea de la rodona");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Longitud de la circumferència");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Àrees i Longituds ", new System.Windows.Forms.TreeNode[] {
-            treeNode12,
-            treeNode13,
-            treeNode14,
-            treeNode15});
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Calcula Invertida");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Mostrar nº de vocals i consonants");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Cadenes", new System.Windows.Forms.TreeNode[] {
-            treeNode17,
-            treeNode18,
-            treeNode19});
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Calcula Fibonacci de n números");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Altres", new System.Windows.Forms.TreeNode[] {
-            treeNode21});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Àrea del triangle");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Àrea Rectangle");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Àrea de la rodona");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Longitud de la circumferència");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Àrees i Longituds ", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4});
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Calcula Invertida");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Mostrar nº de vocals i consonants");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Cadenes", new System.Windows.Forms.TreeNode[] {
+            treeNode6,
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Calcula Fibonacci de n números");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Altres", new System.Windows.Forms.TreeNode[] {
+            treeNode10});
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.p1_options = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.p1_options_init0 = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,26 +57,33 @@
             this.p1_cut = new System.Windows.Forms.ToolStripMenuItem();
             this.p1_paste = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2_rectangle = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtbx_rect_result = new System.Windows.Forms.TextBox();
+            this.txtbx_rect_alcada = new System.Windows.Forms.TextBox();
+            this.txtbx_rect_base = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel3_rodona = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtbx_rodona_result = new System.Windows.Forms.TextBox();
+            this.txtbx_rodona_radi = new System.Windows.Forms.TextBox();
             this.panel5_invertida = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtbx_inv_result = new System.Windows.Forms.TextBox();
+            this.txtbx_inv_text = new System.Windows.Forms.TextBox();
             this.panel4_longitud_circ = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -84,40 +91,33 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txtbx_circ_result = new System.Windows.Forms.TextBox();
+            this.txtbx_circ_radi = new System.Windows.Forms.TextBox();
             this.panel6_count_chars = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtbx_contar_result = new System.Windows.Forms.TextBox();
+            this.txtbx_contar_txt = new System.Windows.Forms.TextBox();
             this.panel7_caracters = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtbx_ncaracters_result = new System.Windows.Forms.TextBox();
+            this.txtbx_ncaracters2 = new System.Windows.Forms.TextBox();
+            this.txtbx_ncaracters1 = new System.Windows.Forms.TextBox();
             this.panel1_triangle = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtbx_trian_result = new System.Windows.Forms.TextBox();
+            this.txtbx_trian_alcada = new System.Windows.Forms.TextBox();
+            this.txtbx_trian_base = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
@@ -136,34 +136,34 @@
             // 
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Left;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
-            this.treeView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.treeView1.Margin = new System.Windows.Forms.Padding(2);
             this.treeView1.Name = "treeView1";
-            treeNode12.Name = "a_triangle";
-            treeNode12.Text = "Àrea del triangle";
-            treeNode13.Name = "a_rectangle";
-            treeNode13.Text = "Àrea Rectangle";
-            treeNode14.Name = "a_rodona";
-            treeNode14.Text = "Àrea de la rodona";
-            treeNode15.Name = "l_circumf";
-            treeNode15.Text = "Longitud de la circumferència";
-            treeNode16.Name = "areesAndLong";
-            treeNode16.Text = "Àrees i Longituds ";
-            treeNode17.Name = "c_invertida";
-            treeNode17.Text = "Calcula Invertida";
-            treeNode18.Name = "c_vocals-consonants";
-            treeNode18.Text = "Mostrar nº de vocals i consonants";
-            treeNode19.Name = "c_caractersRepetits";
-            treeNode19.Text = "Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase";
-            treeNode20.Name = "cadenes";
-            treeNode20.Text = "Cadenes";
-            treeNode21.Name = "a_fibonacci";
-            treeNode21.Text = "Calcula Fibonacci de n números";
-            treeNode22.Name = "altres";
-            treeNode22.Text = "Altres";
+            treeNode1.Name = "a_triangle";
+            treeNode1.Text = "Àrea del triangle";
+            treeNode2.Name = "a_rectangle";
+            treeNode2.Text = "Àrea Rectangle";
+            treeNode3.Name = "a_rodona";
+            treeNode3.Text = "Àrea de la rodona";
+            treeNode4.Name = "l_circumf";
+            treeNode4.Text = "Longitud de la circumferència";
+            treeNode5.Name = "areesAndLong";
+            treeNode5.Text = "Àrees i Longituds ";
+            treeNode6.Name = "c_invertida";
+            treeNode6.Text = "Calcula Invertida";
+            treeNode7.Name = "c_vocals-consonants";
+            treeNode7.Text = "Mostrar nº de vocals i consonants";
+            treeNode8.Name = "c_caractersRepetits";
+            treeNode8.Text = "Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase";
+            treeNode9.Name = "cadenes";
+            treeNode9.Text = "Cadenes";
+            treeNode10.Name = "a_fibonacci";
+            treeNode10.Text = "Calcula Fibonacci de n números";
+            treeNode11.Name = "altres";
+            treeNode11.Text = "Altres";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode16,
-            treeNode20,
-            treeNode22});
+            treeNode5,
+            treeNode9,
+            treeNode11});
             this.treeView1.Size = new System.Drawing.Size(139, 347);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -224,19 +224,72 @@
             this.panel2_rectangle.Controls.Add(this.label18);
             this.panel2_rectangle.Controls.Add(this.label19);
             this.panel2_rectangle.Controls.Add(this.label20);
-            this.panel2_rectangle.Controls.Add(this.textBox4);
-            this.panel2_rectangle.Controls.Add(this.textBox5);
-            this.panel2_rectangle.Controls.Add(this.textBox6);
+            this.panel2_rectangle.Controls.Add(this.txtbx_rect_result);
+            this.panel2_rectangle.Controls.Add(this.txtbx_rect_alcada);
+            this.panel2_rectangle.Controls.Add(this.txtbx_rect_base);
             this.panel2_rectangle.Controls.Add(this.label1);
             this.panel2_rectangle.Controls.Add(this.button1);
             this.panel2_rectangle.Controls.Add(this.button2);
             this.panel2_rectangle.Controls.Add(this.button3);
-            this.panel2_rectangle.Location = new System.Drawing.Point(147, 54);
-            this.panel2_rectangle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2_rectangle.Location = new System.Drawing.Point(147, 49);
+            this.panel2_rectangle.Margin = new System.Windows.Forms.Padding(2);
             this.panel2_rectangle.Name = "panel2_rectangle";
-            this.panel2_rectangle.Size = new System.Drawing.Size(77, 31);
+            this.panel2_rectangle.Size = new System.Drawing.Size(87, 33);
             this.panel2_rectangle.TabIndex = 3;
             this.panel2_rectangle.Visible = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(22, 144);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(49, 13);
+            this.label18.TabIndex = 15;
+            this.label18.Text = "Resultat:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(148, 68);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(43, 13);
+            this.label19.TabIndex = 14;
+            this.label19.Text = "Alçada:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(41, 68);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(34, 13);
+            this.label20.TabIndex = 13;
+            this.label20.Text = "Base:";
+            // 
+            // txtbx_rect_result
+            // 
+            this.txtbx_rect_result.Location = new System.Drawing.Point(94, 141);
+            this.txtbx_rect_result.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_rect_result.Name = "txtbx_rect_result";
+            this.txtbx_rect_result.Size = new System.Drawing.Size(125, 20);
+            this.txtbx_rect_result.TabIndex = 12;
+            // 
+            // txtbx_rect_alcada
+            // 
+            this.txtbx_rect_alcada.ContextMenuStrip = this.p1_options;
+            this.txtbx_rect_alcada.Location = new System.Drawing.Point(134, 92);
+            this.txtbx_rect_alcada.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_rect_alcada.Name = "txtbx_rect_alcada";
+            this.txtbx_rect_alcada.Size = new System.Drawing.Size(85, 20);
+            this.txtbx_rect_alcada.TabIndex = 11;
+            // 
+            // txtbx_rect_base
+            // 
+            this.txtbx_rect_base.ContextMenuStrip = this.p1_options;
+            this.txtbx_rect_base.Location = new System.Drawing.Point(25, 92);
+            this.txtbx_rect_base.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_rect_base.Name = "txtbx_rect_base";
+            this.txtbx_rect_base.Size = new System.Drawing.Size(81, 20);
+            this.txtbx_rect_base.TabIndex = 10;
             // 
             // label1
             // 
@@ -252,7 +305,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(352, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(39, 19);
             this.button1.TabIndex = 5;
@@ -262,7 +315,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(309, 92);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(61, 19);
             this.button2.TabIndex = 4;
@@ -272,7 +325,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(238, 92);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(67, 19);
             this.button3.TabIndex = 3;
@@ -287,14 +340,32 @@
             this.panel3_rodona.Controls.Add(this.button4);
             this.panel3_rodona.Controls.Add(this.button5);
             this.panel3_rodona.Controls.Add(this.button6);
-            this.panel3_rodona.Controls.Add(this.textBox7);
-            this.panel3_rodona.Controls.Add(this.textBox9);
-            this.panel3_rodona.Location = new System.Drawing.Point(147, 88);
-            this.panel3_rodona.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3_rodona.Controls.Add(this.txtbx_rodona_result);
+            this.panel3_rodona.Controls.Add(this.txtbx_rodona_radi);
+            this.panel3_rodona.Location = new System.Drawing.Point(147, 108);
+            this.panel3_rodona.Margin = new System.Windows.Forms.Padding(2);
             this.panel3_rodona.Name = "panel3_rodona";
-            this.panel3_rodona.Size = new System.Drawing.Size(81, 45);
+            this.panel3_rodona.Size = new System.Drawing.Size(75, 22);
             this.panel3_rodona.TabIndex = 4;
             this.panel3_rodona.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(35, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Resultat: ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(35, 94);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Radi: ";
             // 
             // label2
             // 
@@ -310,7 +381,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(352, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(39, 19);
             this.button4.TabIndex = 5;
@@ -320,7 +391,7 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(309, 91);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(61, 20);
             this.button5.TabIndex = 4;
@@ -330,29 +401,29 @@
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(238, 91);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(67, 19);
             this.button6.TabIndex = 3;
             this.button6.Text = "Calculate";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // txtbx_rodona_result
             // 
-            this.textBox7.Location = new System.Drawing.Point(100, 133);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(109, 20);
-            this.textBox7.TabIndex = 2;
+            this.txtbx_rodona_result.Location = new System.Drawing.Point(100, 133);
+            this.txtbx_rodona_result.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_rodona_result.Name = "txtbx_rodona_result";
+            this.txtbx_rodona_result.Size = new System.Drawing.Size(109, 20);
+            this.txtbx_rodona_result.TabIndex = 2;
             // 
-            // textBox9
+            // txtbx_rodona_radi
             // 
-            this.textBox9.ContextMenuStrip = this.p1_options;
-            this.textBox9.Location = new System.Drawing.Point(100, 91);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(109, 20);
-            this.textBox9.TabIndex = 0;
+            this.txtbx_rodona_radi.ContextMenuStrip = this.p1_options;
+            this.txtbx_rodona_radi.Location = new System.Drawing.Point(100, 91);
+            this.txtbx_rodona_radi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_rodona_radi.Name = "txtbx_rodona_radi";
+            this.txtbx_rodona_radi.Size = new System.Drawing.Size(109, 20);
+            this.txtbx_rodona_radi.TabIndex = 0;
             // 
             // panel5_invertida
             // 
@@ -361,14 +432,23 @@
             this.panel5_invertida.Controls.Add(this.button7);
             this.panel5_invertida.Controls.Add(this.button8);
             this.panel5_invertida.Controls.Add(this.button9);
-            this.panel5_invertida.Controls.Add(this.textBox10);
-            this.panel5_invertida.Controls.Add(this.textBox12);
-            this.panel5_invertida.Location = new System.Drawing.Point(291, 54);
-            this.panel5_invertida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5_invertida.Controls.Add(this.txtbx_inv_result);
+            this.panel5_invertida.Controls.Add(this.txtbx_inv_text);
+            this.panel5_invertida.Location = new System.Drawing.Point(281, 53);
+            this.panel5_invertida.Margin = new System.Windows.Forms.Padding(2);
             this.panel5_invertida.Name = "panel5_invertida";
-            this.panel5_invertida.Size = new System.Drawing.Size(81, 30);
+            this.panel5_invertida.Size = new System.Drawing.Size(112, 29);
             this.panel5_invertida.TabIndex = 5;
             this.panel5_invertida.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(16, 95);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(31, 13);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Text:";
             // 
             // label3
             // 
@@ -384,7 +464,7 @@
             // button7
             // 
             this.button7.Location = new System.Drawing.Point(352, 0);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(39, 19);
             this.button7.TabIndex = 5;
@@ -394,7 +474,7 @@
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(309, 92);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(61, 19);
             this.button8.TabIndex = 4;
@@ -404,47 +484,29 @@
             // button9
             // 
             this.button9.Location = new System.Drawing.Point(238, 92);
-            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(67, 19);
             this.button9.TabIndex = 3;
             this.button9.Text = "Calculate";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // textBox10
+            // txtbx_inv_result
             // 
-            this.textBox10.Location = new System.Drawing.Point(69, 156);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(68, 20);
-            this.textBox10.TabIndex = 2;
+            this.txtbx_inv_result.Location = new System.Drawing.Point(59, 146);
+            this.txtbx_inv_result.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_inv_result.Name = "txtbx_inv_result";
+            this.txtbx_inv_result.Size = new System.Drawing.Size(166, 20);
+            this.txtbx_inv_result.TabIndex = 2;
             // 
-            // textBox12
+            // txtbx_inv_text
             // 
-            this.textBox12.ContextMenuStrip = this.p1_options;
-            this.textBox12.Location = new System.Drawing.Point(59, 92);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(166, 20);
-            this.textBox12.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 94);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Radi: ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 136);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Resultat: ";
+            this.txtbx_inv_text.ContextMenuStrip = this.p1_options;
+            this.txtbx_inv_text.Location = new System.Drawing.Point(59, 92);
+            this.txtbx_inv_text.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_inv_text.Name = "txtbx_inv_text";
+            this.txtbx_inv_text.Size = new System.Drawing.Size(166, 20);
+            this.txtbx_inv_text.TabIndex = 0;
             // 
             // panel4_longitud_circ
             // 
@@ -454,12 +516,12 @@
             this.panel4_longitud_circ.Controls.Add(this.button10);
             this.panel4_longitud_circ.Controls.Add(this.button11);
             this.panel4_longitud_circ.Controls.Add(this.button12);
-            this.panel4_longitud_circ.Controls.Add(this.textBox8);
-            this.panel4_longitud_circ.Controls.Add(this.textBox13);
-            this.panel4_longitud_circ.Location = new System.Drawing.Point(285, 6);
+            this.panel4_longitud_circ.Controls.Add(this.txtbx_circ_result);
+            this.panel4_longitud_circ.Controls.Add(this.txtbx_circ_radi);
+            this.panel4_longitud_circ.Location = new System.Drawing.Point(291, 11);
             this.panel4_longitud_circ.Margin = new System.Windows.Forms.Padding(2);
             this.panel4_longitud_circ.Name = "panel4_longitud_circ";
-            this.panel4_longitud_circ.Size = new System.Drawing.Size(86, 36);
+            this.panel4_longitud_circ.Size = new System.Drawing.Size(53, 25);
             this.panel4_longitud_circ.TabIndex = 6;
             this.panel4_longitud_circ.Visible = false;
             // 
@@ -522,31 +584,22 @@
             this.button12.Text = "Calculate";
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // textBox8
+            // txtbx_circ_result
             // 
-            this.textBox8.Location = new System.Drawing.Point(100, 133);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(109, 20);
-            this.textBox8.TabIndex = 2;
+            this.txtbx_circ_result.Location = new System.Drawing.Point(100, 133);
+            this.txtbx_circ_result.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_circ_result.Name = "txtbx_circ_result";
+            this.txtbx_circ_result.Size = new System.Drawing.Size(109, 20);
+            this.txtbx_circ_result.TabIndex = 2;
             // 
-            // textBox13
+            // txtbx_circ_radi
             // 
-            this.textBox13.ContextMenuStrip = this.p1_options;
-            this.textBox13.Location = new System.Drawing.Point(100, 91);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(109, 20);
-            this.textBox13.TabIndex = 0;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(16, 95);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 13);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Text:";
+            this.txtbx_circ_radi.ContextMenuStrip = this.p1_options;
+            this.txtbx_circ_radi.Location = new System.Drawing.Point(100, 91);
+            this.txtbx_circ_radi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_circ_radi.Name = "txtbx_circ_radi";
+            this.txtbx_circ_radi.Size = new System.Drawing.Size(109, 20);
+            this.txtbx_circ_radi.TabIndex = 0;
             // 
             // panel6_count_chars
             // 
@@ -555,12 +608,12 @@
             this.panel6_count_chars.Controls.Add(this.button13);
             this.panel6_count_chars.Controls.Add(this.button14);
             this.panel6_count_chars.Controls.Add(this.button15);
-            this.panel6_count_chars.Controls.Add(this.textBox11);
-            this.panel6_count_chars.Controls.Add(this.textBox14);
-            this.panel6_count_chars.Location = new System.Drawing.Point(419, 49);
+            this.panel6_count_chars.Controls.Add(this.txtbx_contar_result);
+            this.panel6_count_chars.Controls.Add(this.txtbx_contar_txt);
+            this.panel6_count_chars.Location = new System.Drawing.Point(440, 49);
             this.panel6_count_chars.Margin = new System.Windows.Forms.Padding(2);
             this.panel6_count_chars.Name = "panel6_count_chars";
-            this.panel6_count_chars.Size = new System.Drawing.Size(83, 52);
+            this.panel6_count_chars.Size = new System.Drawing.Size(78, 31);
             this.panel6_count_chars.TabIndex = 7;
             this.panel6_count_chars.Visible = false;
             // 
@@ -614,22 +667,22 @@
             this.button15.Text = "Calculate";
             this.button15.UseVisualStyleBackColor = true;
             // 
-            // textBox11
+            // txtbx_contar_result
             // 
-            this.textBox11.Location = new System.Drawing.Point(69, 156);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(68, 20);
-            this.textBox11.TabIndex = 2;
+            this.txtbx_contar_result.Location = new System.Drawing.Point(59, 138);
+            this.txtbx_contar_result.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_contar_result.Name = "txtbx_contar_result";
+            this.txtbx_contar_result.Size = new System.Drawing.Size(166, 20);
+            this.txtbx_contar_result.TabIndex = 2;
             // 
-            // textBox14
+            // txtbx_contar_txt
             // 
-            this.textBox14.ContextMenuStrip = this.p1_options;
-            this.textBox14.Location = new System.Drawing.Point(59, 92);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(166, 20);
-            this.textBox14.TabIndex = 0;
+            this.txtbx_contar_txt.ContextMenuStrip = this.p1_options;
+            this.txtbx_contar_txt.Location = new System.Drawing.Point(59, 92);
+            this.txtbx_contar_txt.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_contar_txt.Name = "txtbx_contar_txt";
+            this.txtbx_contar_txt.Size = new System.Drawing.Size(166, 20);
+            this.txtbx_contar_txt.TabIndex = 0;
             // 
             // panel7_caracters
             // 
@@ -639,15 +692,33 @@
             this.panel7_caracters.Controls.Add(this.button16);
             this.panel7_caracters.Controls.Add(this.button17);
             this.panel7_caracters.Controls.Add(this.button18);
-            this.panel7_caracters.Controls.Add(this.textBox15);
-            this.panel7_caracters.Controls.Add(this.textBox16);
-            this.panel7_caracters.Controls.Add(this.textBox17);
-            this.panel7_caracters.Location = new System.Drawing.Point(419, 13);
+            this.panel7_caracters.Controls.Add(this.txtbx_ncaracters_result);
+            this.panel7_caracters.Controls.Add(this.txtbx_ncaracters2);
+            this.panel7_caracters.Controls.Add(this.txtbx_ncaracters1);
+            this.panel7_caracters.Location = new System.Drawing.Point(423, 10);
             this.panel7_caracters.Margin = new System.Windows.Forms.Padding(2);
             this.panel7_caracters.Name = "panel7_caracters";
-            this.panel7_caracters.Size = new System.Drawing.Size(75, 29);
+            this.panel7_caracters.Size = new System.Drawing.Size(94, 27);
             this.panel7_caracters.TabIndex = 8;
             this.panel7_caracters.Visible = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(120, 95);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(56, 13);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Caràcter2:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(10, 95);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(56, 13);
+            this.label13.TabIndex = 7;
+            this.label13.Text = "Caràcter1:";
             // 
             // label12
             // 
@@ -655,9 +726,9 @@
             this.label12.Location = new System.Drawing.Point(163, 18);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(112, 13);
+            this.label12.Size = new System.Drawing.Size(106, 13);
             this.label12.TabIndex = 6;
-            this.label12.Text = "Númerod de caracters";
+            this.label12.Text = "Número de caracters";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button16
@@ -690,119 +761,48 @@
             this.button18.Text = "Calculate";
             this.button18.UseVisualStyleBackColor = true;
             // 
-            // textBox15
+            // txtbx_ncaracters_result
             // 
-            this.textBox15.Location = new System.Drawing.Point(69, 156);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(68, 20);
-            this.textBox15.TabIndex = 2;
+            this.txtbx_ncaracters_result.Location = new System.Drawing.Point(69, 156);
+            this.txtbx_ncaracters_result.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_ncaracters_result.Name = "txtbx_ncaracters_result";
+            this.txtbx_ncaracters_result.Size = new System.Drawing.Size(68, 20);
+            this.txtbx_ncaracters_result.TabIndex = 2;
             // 
-            // textBox16
+            // txtbx_ncaracters2
             // 
-            this.textBox16.ContextMenuStrip = this.p1_options;
-            this.textBox16.Location = new System.Drawing.Point(181, 92);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(38, 20);
-            this.textBox16.TabIndex = 1;
+            this.txtbx_ncaracters2.ContextMenuStrip = this.p1_options;
+            this.txtbx_ncaracters2.Location = new System.Drawing.Point(181, 92);
+            this.txtbx_ncaracters2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_ncaracters2.Name = "txtbx_ncaracters2";
+            this.txtbx_ncaracters2.Size = new System.Drawing.Size(38, 20);
+            this.txtbx_ncaracters2.TabIndex = 1;
             // 
-            // textBox17
+            // txtbx_ncaracters1
             // 
-            this.textBox17.ContextMenuStrip = this.p1_options;
-            this.textBox17.Location = new System.Drawing.Point(69, 92);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(37, 20);
-            this.textBox17.TabIndex = 0;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(10, 95);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 13);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "Caràcter1:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(120, 95);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(56, 13);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Caràcter2:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(22, 144);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(49, 13);
-            this.label18.TabIndex = 15;
-            this.label18.Text = "Resultat:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(148, 68);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(43, 13);
-            this.label19.TabIndex = 14;
-            this.label19.Text = "Alçada:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(41, 68);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(34, 13);
-            this.label20.TabIndex = 13;
-            this.label20.Text = "Base:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(94, 141);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 20);
-            this.textBox4.TabIndex = 12;
-            // 
-            // textBox5
-            // 
-            this.textBox5.ContextMenuStrip = this.p1_options;
-            this.textBox5.Location = new System.Drawing.Point(134, 92);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(85, 20);
-            this.textBox5.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            this.textBox6.ContextMenuStrip = this.p1_options;
-            this.textBox6.Location = new System.Drawing.Point(25, 92);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(81, 20);
-            this.textBox6.TabIndex = 10;
+            this.txtbx_ncaracters1.ContextMenuStrip = this.p1_options;
+            this.txtbx_ncaracters1.Location = new System.Drawing.Point(69, 92);
+            this.txtbx_ncaracters1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_ncaracters1.Name = "txtbx_ncaracters1";
+            this.txtbx_ncaracters1.Size = new System.Drawing.Size(37, 20);
+            this.txtbx_ncaracters1.TabIndex = 0;
             // 
             // panel1_triangle
             // 
             this.panel1_triangle.Controls.Add(this.label15);
             this.panel1_triangle.Controls.Add(this.label16);
             this.panel1_triangle.Controls.Add(this.label17);
-            this.panel1_triangle.Controls.Add(this.textBox1);
-            this.panel1_triangle.Controls.Add(this.textBox2);
-            this.panel1_triangle.Controls.Add(this.textBox3);
+            this.panel1_triangle.Controls.Add(this.txtbx_trian_result);
+            this.panel1_triangle.Controls.Add(this.txtbx_trian_alcada);
+            this.panel1_triangle.Controls.Add(this.txtbx_trian_base);
             this.panel1_triangle.Controls.Add(this.label21);
             this.panel1_triangle.Controls.Add(this.button19);
             this.panel1_triangle.Controls.Add(this.button20);
             this.panel1_triangle.Controls.Add(this.button21);
-            this.panel1_triangle.Location = new System.Drawing.Point(147, 161);
+            this.panel1_triangle.Location = new System.Drawing.Point(147, 11);
             this.panel1_triangle.Margin = new System.Windows.Forms.Padding(2);
             this.panel1_triangle.Name = "panel1_triangle";
-            this.panel1_triangle.Size = new System.Drawing.Size(369, 175);
+            this.panel1_triangle.Size = new System.Drawing.Size(91, 26);
             this.panel1_triangle.TabIndex = 9;
             this.panel1_triangle.Visible = false;
             // 
@@ -833,31 +833,31 @@
             this.label17.TabIndex = 13;
             this.label17.Text = "Base:";
             // 
-            // textBox1
+            // txtbx_trian_result
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 141);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 20);
-            this.textBox1.TabIndex = 12;
+            this.txtbx_trian_result.Location = new System.Drawing.Point(94, 141);
+            this.txtbx_trian_result.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_trian_result.Name = "txtbx_trian_result";
+            this.txtbx_trian_result.Size = new System.Drawing.Size(125, 20);
+            this.txtbx_trian_result.TabIndex = 12;
             // 
-            // textBox2
+            // txtbx_trian_alcada
             // 
-            this.textBox2.ContextMenuStrip = this.p1_options;
-            this.textBox2.Location = new System.Drawing.Point(134, 92);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(85, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtbx_trian_alcada.ContextMenuStrip = this.p1_options;
+            this.txtbx_trian_alcada.Location = new System.Drawing.Point(134, 92);
+            this.txtbx_trian_alcada.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_trian_alcada.Name = "txtbx_trian_alcada";
+            this.txtbx_trian_alcada.Size = new System.Drawing.Size(85, 20);
+            this.txtbx_trian_alcada.TabIndex = 11;
             // 
-            // textBox3
+            // txtbx_trian_base
             // 
-            this.textBox3.ContextMenuStrip = this.p1_options;
-            this.textBox3.Location = new System.Drawing.Point(25, 92);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(81, 20);
-            this.textBox3.TabIndex = 10;
+            this.txtbx_trian_base.ContextMenuStrip = this.p1_options;
+            this.txtbx_trian_base.Location = new System.Drawing.Point(25, 92);
+            this.txtbx_trian_base.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbx_trian_base.Name = "txtbx_trian_base";
+            this.txtbx_trian_base.Size = new System.Drawing.Size(81, 20);
+            this.txtbx_trian_base.TabIndex = 10;
             // 
             // label21
             // 
@@ -894,7 +894,7 @@
             // 
             this.button21.Location = new System.Drawing.Point(238, 92);
             this.button21.Margin = new System.Windows.Forms.Padding(2);
-            this.button21.Name = "calculateButton";
+            this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(67, 19);
             this.button21.TabIndex = 3;
             this.button21.Text = "Calculate";
@@ -914,7 +914,7 @@
             this.Controls.Add(this.panel3_rodona);
             this.Controls.Add(this.panel2_rectangle);
             this.Controls.Add(this.treeView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.p1_options.ResumeLayout(false);
@@ -956,15 +956,15 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtbx_rodona_result;
+        private System.Windows.Forms.TextBox txtbx_rodona_radi;
         private System.Windows.Forms.Panel panel5_invertida;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtbx_inv_result;
+        private System.Windows.Forms.TextBox txtbx_inv_text;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
@@ -975,16 +975,16 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtbx_circ_result;
+        private System.Windows.Forms.TextBox txtbx_circ_radi;
         private System.Windows.Forms.Panel panel6_count_chars;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtbx_contar_result;
+        private System.Windows.Forms.TextBox txtbx_contar_txt;
         private System.Windows.Forms.Panel panel7_caracters;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
@@ -992,22 +992,22 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox txtbx_ncaracters_result;
+        private System.Windows.Forms.TextBox txtbx_ncaracters2;
+        private System.Windows.Forms.TextBox txtbx_ncaracters1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtbx_rect_result;
+        private System.Windows.Forms.TextBox txtbx_rect_alcada;
+        private System.Windows.Forms.TextBox txtbx_rect_base;
         private System.Windows.Forms.Panel panel1_triangle;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtbx_trian_result;
+        private System.Windows.Forms.TextBox txtbx_trian_alcada;
+        private System.Windows.Forms.TextBox txtbx_trian_base;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;

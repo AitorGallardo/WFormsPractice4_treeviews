@@ -97,24 +97,28 @@ namespace WindowsForm4_treeviews
             switch (selected)
             {
                 case "a_triangle":
-                    this.hiddeAllPanels();
-                    panel1_triangle.Visible = true;
-                    panel1_triangle.Dock = DockStyle.Fill;
+                    if (checkIfItsDouble(txtbx_trian_base.Text) && checkIfItsDouble(txtbx_trian_alcada.Text))
+                    {
+                        txtbx_trian_result.Text = areaTriangle(Convert.ToDouble(txtbx_rect_base.Text), Convert.ToDouble(txtbx_rect_alcada.Text)).ToString();
+                    }
                     break;
                 case "a_rectangle":
-                    this.hiddeAllPanels();
-                    panel2_rectangle.Visible = true;
-                    panel2_rectangle.Dock = DockStyle.Fill;
+                    if (checkIfItsDouble(txtbx_rect_base.Text)&& checkIfItsDouble(txtbx_rect_alcada.Text))
+                    {
+                        txtbx_rect_result.Text = areaRectangle(Convert.ToDouble(txtbx_rect_base.Text), Convert.ToDouble(txtbx_rect_alcada.Text)).ToString();
+                    }
                     break;
                 case "a_rodona":
-                    this.hiddeAllPanels();
-                    panel3_rodona.Visible = true;
-                    panel3_rodona.Dock = DockStyle.Fill;
+                    if (checkIfItsDouble(txtbx_rodona_radi.Text))
+                    {
+                        txtbx_rodona_result.Text = areaRodona(Convert.ToDouble(txtbx_rodona_radi.Text)).ToString();
+                    }
                     break;
                 case "l_circumf":
-                    this.hiddeAllPanels();
-                    panel4_longitud_circ.Visible = true;
-                    panel4_longitud_circ.Dock = DockStyle.Fill;
+                    if (checkIfItsDouble(txtbx_circ_radi.Text))
+                    {
+                        txtbx_circ_result.Text = longCirucumferencia(Convert.ToDouble(txtbx_circ_radi.Text)).ToString();
+                    }
                     break;
                 case "c_invertida":
                     this.hiddeAllPanels();
@@ -138,9 +142,27 @@ namespace WindowsForm4_treeviews
                     break;
             }
         }
-        void areaDelTriangle()
+        double areaTriangle(double bse, double alcada)
         {
-
+            return (bse * alcada) / 2;
+        }
+        double areaRectangle(double bse, double alcada)
+        {
+            return (bse * alcada);
+        }
+        double areaRodona(double radi)
+        {
+            return Math.PI * (radi * radi);
+        }
+        double longCirucumferencia(double radi)
+        {
+            return 2*Math.PI*radi;
+        }
+        bool checkIfItsDouble(String number)
+        {
+            double dble;
+            return double.TryParse(number,out dble);
+           
         }
     }
 
