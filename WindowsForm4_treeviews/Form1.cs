@@ -121,14 +121,15 @@ namespace WindowsForm4_treeviews
                     }
                     break;
                 case "c_invertida":
-                    this.hiddeAllPanels();
-                    panel5_invertida.Visible = true;
-                    panel5_invertida.Dock = DockStyle.Fill;
+                    char[] textToCharArr = txtbx_inv_text.Text.ToCharArray();
+                    Array.Reverse(textToCharArr);
+                    txtbx_circ_result.Text = textToCharArr.ToString();
+
                     break;
                 case "c_vocals-consonants":
-                    this.hiddeAllPanels();
-                    panel6_count_chars.Visible = true;
-                    panel6_count_chars.Dock = DockStyle.Fill;
+                    int numberOfVowels = txtbx_contar_txt.Text.Count(c => "aeiou".Contains(Char.ToLower(c)));
+                    int numberOfConsonants = txtbx_contar_txt.Text.Count(c => "bcdfghjklmnpqrstvxzçñ".Contains(Char.ToLower(c)));
+                    txtbx_contar_result.Text = "N.vocals: " + numberOfVowels + "N.consonants: " + numberOfConsonants;
                     break;
                 case "c_caractersRepetits":
                     this.hiddeAllPanels();
