@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Àrea del triangle");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Àrea Rectangle");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Àrea de la rodona");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Longitud de la circumferència");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Àrees i Longituds ", new System.Windows.Forms.TreeNode[] {
-            treeNode12,
-            treeNode13,
-            treeNode14,
-            treeNode15});
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Calcula Invertida");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Mostrar nº de vocals i consonants");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Cadenes", new System.Windows.Forms.TreeNode[] {
-            treeNode17,
-            treeNode18,
-            treeNode19});
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Calcula Fibonacci de n números");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Altres", new System.Windows.Forms.TreeNode[] {
-            treeNode21});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Àrea del triangle");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Àrea Rectangle");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Àrea de la rodona");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Longitud de la circumferència");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Àrees i Longituds ", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4});
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Calcula Invertida");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Mostrar nº de vocals i consonants");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Cadenes", new System.Windows.Forms.TreeNode[] {
+            treeNode6,
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Calcula Fibonacci de n números");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Altres", new System.Windows.Forms.TreeNode[] {
+            treeNode10});
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.p1_options = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.p1_options_init0 = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,6 +102,9 @@
             this.txtbx_contar_result = new System.Windows.Forms.TextBox();
             this.txtbx_contar_txt = new System.Windows.Forms.TextBox();
             this.panel7_caracters = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtbx_ncaracters_txt = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -122,9 +125,6 @@
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
-            this.txtbx_ncaracters_txt = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.panel8_fiboncacci = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -150,32 +150,32 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Left;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode12.Name = "a_triangle";
-            treeNode12.Text = "Àrea del triangle";
-            treeNode13.Name = "a_rectangle";
-            treeNode13.Text = "Àrea Rectangle";
-            treeNode14.Name = "a_rodona";
-            treeNode14.Text = "Àrea de la rodona";
-            treeNode15.Name = "l_circumf";
-            treeNode15.Text = "Longitud de la circumferència";
-            treeNode16.Name = "areesAndLong";
-            treeNode16.Text = "Àrees i Longituds ";
-            treeNode17.Name = "c_invertida";
-            treeNode17.Text = "Calcula Invertida";
-            treeNode18.Name = "c_vocals-consonants";
-            treeNode18.Text = "Mostrar nº de vocals i consonants";
-            treeNode19.Name = "c_caractersRepetits";
-            treeNode19.Text = "Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase";
-            treeNode20.Name = "cadenes";
-            treeNode20.Text = "Cadenes";
-            treeNode21.Name = "a_fibonacci";
-            treeNode21.Text = "Calcula Fibonacci de n números";
-            treeNode22.Name = "altres";
-            treeNode22.Text = "Altres";
+            treeNode1.Name = "a_triangle";
+            treeNode1.Text = "Àrea del triangle";
+            treeNode2.Name = "a_rectangle";
+            treeNode2.Text = "Àrea Rectangle";
+            treeNode3.Name = "a_rodona";
+            treeNode3.Text = "Àrea de la rodona";
+            treeNode4.Name = "l_circumf";
+            treeNode4.Text = "Longitud de la circumferència";
+            treeNode5.Name = "areesAndLong";
+            treeNode5.Text = "Àrees i Longituds ";
+            treeNode6.Name = "c_invertida";
+            treeNode6.Text = "Calcula Invertida";
+            treeNode7.Name = "c_vocals-consonants";
+            treeNode7.Text = "Mostrar nº de vocals i consonants";
+            treeNode8.Name = "c_caractersRepetits";
+            treeNode8.Text = "Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase";
+            treeNode9.Name = "cadenes";
+            treeNode9.Text = "Cadenes";
+            treeNode10.Name = "a_fibonacci";
+            treeNode10.Text = "Calcula Fibonacci de n números";
+            treeNode11.Name = "altres";
+            treeNode11.Text = "Altres";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode16,
-            treeNode20,
-            treeNode22});
+            treeNode5,
+            treeNode9,
+            treeNode11});
             this.treeView1.Size = new System.Drawing.Size(206, 534);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -243,9 +243,9 @@
             this.panel2_rectangle.Controls.Add(this.button1);
             this.panel2_rectangle.Controls.Add(this.button2);
             this.panel2_rectangle.Controls.Add(this.button3);
-            this.panel2_rectangle.Location = new System.Drawing.Point(238, 63);
+            this.panel2_rectangle.Location = new System.Drawing.Point(212, 52);
             this.panel2_rectangle.Name = "panel2_rectangle";
-            this.panel2_rectangle.Size = new System.Drawing.Size(68, 28);
+            this.panel2_rectangle.Size = new System.Drawing.Size(112, 40);
             this.panel2_rectangle.TabIndex = 3;
             this.panel2_rectangle.Visible = false;
             // 
@@ -320,6 +320,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button2
             // 
@@ -329,6 +330,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button3
             // 
@@ -338,6 +340,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Calculate";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // panel3_rodona
             // 
@@ -349,9 +352,9 @@
             this.panel3_rodona.Controls.Add(this.button6);
             this.panel3_rodona.Controls.Add(this.txtbx_rodona_result);
             this.panel3_rodona.Controls.Add(this.txtbx_rodona_radi);
-            this.panel3_rodona.Location = new System.Drawing.Point(227, 110);
+            this.panel3_rodona.Location = new System.Drawing.Point(221, 109);
             this.panel3_rodona.Name = "panel3_rodona";
-            this.panel3_rodona.Size = new System.Drawing.Size(99, 24);
+            this.panel3_rodona.Size = new System.Drawing.Size(75, 31);
             this.panel3_rodona.TabIndex = 4;
             this.panel3_rodona.Visible = false;
             // 
@@ -393,6 +396,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "X";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button5
             // 
@@ -402,6 +406,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Clear";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button6
             // 
@@ -411,6 +416,7 @@
             this.button6.TabIndex = 3;
             this.button6.Text = "Calculate";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // txtbx_rodona_result
             // 
@@ -436,9 +442,9 @@
             this.panel5_invertida.Controls.Add(this.button9);
             this.panel5_invertida.Controls.Add(this.txtbx_inv_result);
             this.panel5_invertida.Controls.Add(this.txtbx_inv_text);
-            this.panel5_invertida.Location = new System.Drawing.Point(437, 81);
+            this.panel5_invertida.Location = new System.Drawing.Point(447, 69);
             this.panel5_invertida.Name = "panel5_invertida";
-            this.panel5_invertida.Size = new System.Drawing.Size(79, 38);
+            this.panel5_invertida.Size = new System.Drawing.Size(75, 31);
             this.panel5_invertida.TabIndex = 5;
             this.panel5_invertida.Visible = false;
             // 
@@ -470,6 +476,7 @@
             this.button7.TabIndex = 5;
             this.button7.Text = "X";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button8
             // 
@@ -479,6 +486,7 @@
             this.button8.TabIndex = 4;
             this.button8.Text = "Clear";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button9
             // 
@@ -488,6 +496,7 @@
             this.button9.TabIndex = 3;
             this.button9.Text = "Calculate";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // txtbx_inv_result
             // 
@@ -514,9 +523,9 @@
             this.panel4_longitud_circ.Controls.Add(this.button12);
             this.panel4_longitud_circ.Controls.Add(this.txtbx_circ_result);
             this.panel4_longitud_circ.Controls.Add(this.txtbx_circ_radi);
-            this.panel4_longitud_circ.Location = new System.Drawing.Point(436, 17);
+            this.panel4_longitud_circ.Location = new System.Drawing.Point(441, 12);
             this.panel4_longitud_circ.Name = "panel4_longitud_circ";
-            this.panel4_longitud_circ.Size = new System.Drawing.Size(80, 38);
+            this.panel4_longitud_circ.Size = new System.Drawing.Size(75, 36);
             this.panel4_longitud_circ.TabIndex = 6;
             this.panel4_longitud_circ.Visible = false;
             // 
@@ -558,6 +567,7 @@
             this.button10.TabIndex = 5;
             this.button10.Text = "X";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button11
             // 
@@ -567,6 +577,7 @@
             this.button11.TabIndex = 4;
             this.button11.Text = "Clear";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button12
             // 
@@ -576,6 +587,7 @@
             this.button12.TabIndex = 3;
             this.button12.Text = "Calculate";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // txtbx_circ_result
             // 
@@ -601,9 +613,9 @@
             this.panel6_count_chars.Controls.Add(this.button15);
             this.panel6_count_chars.Controls.Add(this.txtbx_contar_result);
             this.panel6_count_chars.Controls.Add(this.txtbx_contar_txt);
-            this.panel6_count_chars.Location = new System.Drawing.Point(639, 82);
+            this.panel6_count_chars.Location = new System.Drawing.Point(639, 68);
             this.panel6_count_chars.Name = "panel6_count_chars";
-            this.panel6_count_chars.Size = new System.Drawing.Size(93, 35);
+            this.panel6_count_chars.Size = new System.Drawing.Size(87, 30);
             this.panel6_count_chars.TabIndex = 7;
             this.panel6_count_chars.Visible = false;
             // 
@@ -635,6 +647,7 @@
             this.button13.TabIndex = 5;
             this.button13.Text = "X";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button14
             // 
@@ -644,6 +657,7 @@
             this.button14.TabIndex = 4;
             this.button14.Text = "Clear";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button15
             // 
@@ -653,6 +667,7 @@
             this.button15.TabIndex = 3;
             this.button15.Text = "Calculate";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // txtbx_contar_result
             // 
@@ -683,11 +698,36 @@
             this.panel7_caracters.Controls.Add(this.txtbx_ncaracters_result);
             this.panel7_caracters.Controls.Add(this.txtbx_ncaracters2);
             this.panel7_caracters.Controls.Add(this.txtbx_ncaracters1);
-            this.panel7_caracters.Location = new System.Drawing.Point(636, 17);
+            this.panel7_caracters.Location = new System.Drawing.Point(639, 15);
             this.panel7_caracters.Name = "panel7_caracters";
-            this.panel7_caracters.Size = new System.Drawing.Size(112, 30);
+            this.panel7_caracters.Size = new System.Drawing.Size(97, 33);
             this.panel7_caracters.TabIndex = 8;
             this.panel7_caracters.Visible = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(27, 145);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(43, 20);
+            this.label23.TabIndex = 11;
+            this.label23.Text = "Text:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(27, 290);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(73, 20);
+            this.label22.TabIndex = 10;
+            this.label22.Text = "Resultat:";
+            // 
+            // txtbx_ncaracters_txt
+            // 
+            this.txtbx_ncaracters_txt.Location = new System.Drawing.Point(116, 142);
+            this.txtbx_ncaracters_txt.Name = "txtbx_ncaracters_txt";
+            this.txtbx_ncaracters_txt.Size = new System.Drawing.Size(234, 26);
+            this.txtbx_ncaracters_txt.TabIndex = 9;
             // 
             // label14
             // 
@@ -727,6 +767,7 @@
             this.button16.TabIndex = 5;
             this.button16.Text = "X";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button17
             // 
@@ -736,6 +777,7 @@
             this.button17.TabIndex = 4;
             this.button17.Text = "Clear";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button18
             // 
@@ -745,6 +787,7 @@
             this.button18.TabIndex = 3;
             this.button18.Text = "Calculate";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // txtbx_ncaracters_result
             // 
@@ -781,9 +824,9 @@
             this.panel1_triangle.Controls.Add(this.button19);
             this.panel1_triangle.Controls.Add(this.button20);
             this.panel1_triangle.Controls.Add(this.button21);
-            this.panel1_triangle.Location = new System.Drawing.Point(220, 194);
+            this.panel1_triangle.Location = new System.Drawing.Point(221, 8);
             this.panel1_triangle.Name = "panel1_triangle";
-            this.panel1_triangle.Size = new System.Drawing.Size(574, 306);
+            this.panel1_triangle.Size = new System.Drawing.Size(103, 38);
             this.panel1_triangle.TabIndex = 9;
             this.panel1_triangle.Visible = false;
             // 
@@ -858,6 +901,7 @@
             this.button19.TabIndex = 5;
             this.button19.Text = "X";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button20
             // 
@@ -879,31 +923,6 @@
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.calculateButton_Click);
             // 
-            // txtbx_ncaracters_txt
-            // 
-            this.txtbx_ncaracters_txt.Location = new System.Drawing.Point(116, 142);
-            this.txtbx_ncaracters_txt.Name = "txtbx_ncaracters_txt";
-            this.txtbx_ncaracters_txt.Size = new System.Drawing.Size(234, 26);
-            this.txtbx_ncaracters_txt.TabIndex = 9;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(27, 290);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(73, 20);
-            this.label22.TabIndex = 10;
-            this.label22.Text = "Resultat:";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(27, 145);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(43, 20);
-            this.label23.TabIndex = 11;
-            this.label23.Text = "Text:";
-            // 
             // panel8_fiboncacci
             // 
             this.panel8_fiboncacci.Controls.Add(this.label24);
@@ -914,9 +933,9 @@
             this.panel8_fiboncacci.Controls.Add(this.button24);
             this.panel8_fiboncacci.Controls.Add(this.txtbx_fibonacci_result);
             this.panel8_fiboncacci.Controls.Add(this.txtbx_fibonacci_number);
-            this.panel8_fiboncacci.Location = new System.Drawing.Point(221, 148);
+            this.panel8_fiboncacci.Location = new System.Drawing.Point(218, 162);
             this.panel8_fiboncacci.Name = "panel8_fiboncacci";
-            this.panel8_fiboncacci.Size = new System.Drawing.Size(105, 37);
+            this.panel8_fiboncacci.Size = new System.Drawing.Size(78, 26);
             this.panel8_fiboncacci.TabIndex = 10;
             this.panel8_fiboncacci.Visible = false;
             // 
@@ -958,6 +977,7 @@
             this.button22.TabIndex = 5;
             this.button22.Text = "X";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button23
             // 
@@ -967,6 +987,7 @@
             this.button23.TabIndex = 4;
             this.button23.Text = "Clear";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // button24
             // 
@@ -976,6 +997,7 @@
             this.button24.TabIndex = 3;
             this.button24.Text = "Calculate";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // txtbx_fibonacci_result
             // 

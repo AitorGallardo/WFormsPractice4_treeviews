@@ -94,20 +94,16 @@ namespace WindowsForm4_treeviews
                 {
                     ((TextBox)x).Clear();
                 }
-                if (x.Controls.Count > 0) // << It iterates recursively over every control if it has controls on it to check if there is Textboxs inside of it >>
-                {                           // What happens is that this function just checks controls in the form, and the textboxs may be inside of this controls in which case
-                    clearAllTxtbx(x);           //we are not aware of their existence
-                }
-            }
+                if (x.Controls.Count > 0) 
+                {                           
+                    clearAllTxtbx(x);  // << It iterates recursively over every control if it has controls on it to check if there is Textboxs inside of it >>
+                }                           // What happens is that this function just checks controls in the form, and the textboxs may be inside of this controls in which case
+            }                                   //we are not aware of their existence    
         }
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            //if (button.Text.Equals("Calculate"))
-            //{
-            //    calculateResult(selectedNode);
-            //}
 
             switch (button.Text)
             {
@@ -156,17 +152,30 @@ namespace WindowsForm4_treeviews
                     else { MessageBox.Show("You must introduce a number in order to do the operation"); }
                     break;
                 case "c_invertida":
-                    char[] textToCharArr = txtbx_inv_text.Text.ToCharArray();
-                    Array.Reverse(textToCharArr);
-                    txtbx_circ_result.Text = textToCharArr.ToString();
+                    if (txtbx_inv_text.Text != null)
+                    {
+                        char[] textToCharArr = txtbx_inv_text.Text.ToCharArray();
+                        Array.Reverse(textToCharArr);
+                        txtbx_circ_result.Text = textToCharArr.ToString();
+                    }
+                    else { MessageBox.Show("You must fill the camp"); }
                     break;
                 case "c_vocals-consonants":
-                    int numberOfVowels = txtbx_contar_txt.Text.Count(c => "aeiou".Contains(Char.ToLower(c)));
-                    int numberOfConsonants = txtbx_contar_txt.Text.Count(c => "bcdfghjklmnpqrstvxzçñ".Contains(Char.ToLower(c)));
-                    txtbx_contar_result.Text = "N.vocals: " + numberOfVowels + "N.consonants: " + numberOfConsonants;
+                    if (txtbx_contar_txt.Text != null)
+                    {
+                        int numberOfVowels = txtbx_contar_txt.Text.Count(c => "aeiou".Contains(Char.ToLower(c)));
+                        int numberOfConsonants = txtbx_contar_txt.Text.Count(c => "bcdfghjklmnpqrstvxzçñ".Contains(Char.ToLower(c)));
+                        txtbx_contar_result.Text = "N.vocals: " + numberOfVowels + "N.consonants: " + numberOfConsonants;
+                    }
+                    else { MessageBox.Show("You must fill the camp"); }
                     break;
                 case "c_caractersRepetits":
-                    txtbx_ncaracters_result.Text = searchSeq(txtbx_ncaracters_txt.Text, txtbx_ncaracters1.Text, txtbx_ncaracters2.Text).ToString();
+                    if ((txtbx_ncaracters_txt.Text !=null) && (txtbx_ncaracters1.Text !=null) && (txtbx_ncaracters2.Text != null))
+                    {
+                        txtbx_ncaracters_result.Text = searchSeq(txtbx_ncaracters_txt.Text, txtbx_ncaracters1.Text, txtbx_ncaracters2.Text).ToString();
+                    }
+                    else { MessageBox.Show("You must fill camps"); }
+                    
                     break;
                 case "a_fibonacci":
                     if (checkIfItsInteger(txtbx_fibonacci_number.Text))
@@ -177,7 +186,7 @@ namespace WindowsForm4_treeviews
                         sequencia.Reverse();
                         txtbx_fibonacci_result.Text = String.Join(",", sequencia.ToArray());
                     }
-
+                    else { MessageBox.Show("You must introduce a number in order to do the operation"); }
                     break;
             }
         }
