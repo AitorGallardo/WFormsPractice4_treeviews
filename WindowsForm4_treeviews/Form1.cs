@@ -22,7 +22,7 @@ namespace WindowsForm4_treeviews
         {
             if (!selectedNode.Equals(treeView1.SelectedNode.Name))
             {
-                clearAllTxtbx();
+                clearAllTxtbx(this);
             }
             selectedNode = treeView1.SelectedNode.Name;
             openSelectedPanel(selectedNode);
@@ -86,13 +86,17 @@ namespace WindowsForm4_treeviews
             }
         }
 
-        void clearAllTxtbx() // miar de hacer de forma recursiva .... https://stackoverflow.com/questions/4811229/how-to-clear-the-text-of-all-textboxes-in-the-form
+        void clearAllTxtbx(Control cntrl) 
         {
-            foreach (Control x in this.Controls)
+            foreach (Control x in cntrl.Controls)
             {
                 if (x is TextBox)
                 {
                     ((TextBox)x).Clear();
+                }
+                if (x.Controls.Count > 0) // << It iterates recursively over every control if it has controls on it to check if there is Textboxs inside of it >>
+                {                           // What happens is that this function just checks controls in the form, and the textboxs may be inside of this controls in which case
+                    clearAllTxtbx(x);           //we are not aware of their existence
                 }
             }
         }
@@ -111,7 +115,7 @@ namespace WindowsForm4_treeviews
                     calculateResult(selectedNode);
                     break;
                 case "Clear":
-                    clearAllTxtbx();
+                    clearAllTxtbx(this);
                     break;
                 case "X":
                     // close current panel
