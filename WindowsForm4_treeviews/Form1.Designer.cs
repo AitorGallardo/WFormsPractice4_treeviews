@@ -49,7 +49,7 @@
             System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Altres", new System.Windows.Forms.TreeNode[] {
             treeNode10});
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.p1_options = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.p1_options_init0 = new System.Windows.Forms.ToolStripMenuItem();
             this.p1_increase1 = new System.Windows.Forms.ToolStripMenuItem();
             this.p1_decreaset1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -134,7 +134,7 @@
             this.button24 = new System.Windows.Forms.Button();
             this.txtbx_fibonacci_result = new System.Windows.Forms.TextBox();
             this.txtbx_fibonacci_number = new System.Windows.Forms.TextBox();
-            this.p1_options.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.panel2_rectangle.SuspendLayout();
             this.panel3_rodona.SuspendLayout();
             this.panel5_invertida.SuspendLayout();
@@ -180,25 +180,27 @@
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
-            // p1_options
+            // menuStrip
             // 
-            this.p1_options.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.p1_options.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.p1_options_init0,
             this.p1_increase1,
             this.p1_decreaset1,
             this.p1_copy,
             this.p1_cut,
             this.p1_paste});
-            this.p1_options.Name = "contextMenuStrip1";
-            this.p1_options.Size = new System.Drawing.Size(331, 184);
-            this.p1_options.Text = "Options";
+            this.menuStrip.Name = "contextMenuStrip1";
+            this.menuStrip.Size = new System.Drawing.Size(331, 184);
+            this.menuStrip.Text = "Options";
+            this.menuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.menuStrip_Opening);
             // 
             // p1_options_init0
             // 
             this.p1_options_init0.Name = "p1_options_init0";
             this.p1_options_init0.Size = new System.Drawing.Size(330, 30);
             this.p1_options_init0.Text = "Inicialitzar a 0";
+            this.p1_options_init0.Click += new System.EventHandler(this.p1_options_init0_Click);
             // 
             // p1_increase1
             // 
@@ -206,12 +208,14 @@
             this.p1_increase1.Size = new System.Drawing.Size(330, 30);
             this.p1_increase1.Text = "Incrementar en 1 el valor actual";
             this.p1_increase1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.p1_increase1.Click += new System.EventHandler(this.p1_increase1_Click);
             // 
             // p1_decreaset1
             // 
             this.p1_decreaset1.Name = "p1_decreaset1";
             this.p1_decreaset1.Size = new System.Drawing.Size(330, 30);
             this.p1_decreaset1.Text = "Decrementar 1";
+            this.p1_decreaset1.Click += new System.EventHandler(this.p1_decreaset1_Click);
             // 
             // p1_copy
             // 
@@ -243,9 +247,9 @@
             this.panel2_rectangle.Controls.Add(this.button1);
             this.panel2_rectangle.Controls.Add(this.button2);
             this.panel2_rectangle.Controls.Add(this.button3);
-            this.panel2_rectangle.Location = new System.Drawing.Point(212, 52);
+            this.panel2_rectangle.Location = new System.Drawing.Point(230, 64);
             this.panel2_rectangle.Name = "panel2_rectangle";
-            this.panel2_rectangle.Size = new System.Drawing.Size(112, 40);
+            this.panel2_rectangle.Size = new System.Drawing.Size(93, 33);
             this.panel2_rectangle.TabIndex = 3;
             this.panel2_rectangle.Visible = false;
             // 
@@ -283,12 +287,13 @@
             // 
             this.txtbx_rect_result.Location = new System.Drawing.Point(141, 217);
             this.txtbx_rect_result.Name = "txtbx_rect_result";
+            this.txtbx_rect_result.ReadOnly = true;
             this.txtbx_rect_result.Size = new System.Drawing.Size(186, 26);
             this.txtbx_rect_result.TabIndex = 12;
             // 
             // txtbx_rect_alcada
             // 
-            this.txtbx_rect_alcada.ContextMenuStrip = this.p1_options;
+            this.txtbx_rect_alcada.ContextMenuStrip = this.menuStrip;
             this.txtbx_rect_alcada.Location = new System.Drawing.Point(201, 142);
             this.txtbx_rect_alcada.Name = "txtbx_rect_alcada";
             this.txtbx_rect_alcada.Size = new System.Drawing.Size(126, 26);
@@ -296,7 +301,7 @@
             // 
             // txtbx_rect_base
             // 
-            this.txtbx_rect_base.ContextMenuStrip = this.p1_options;
+            this.txtbx_rect_base.ContextMenuStrip = this.menuStrip;
             this.txtbx_rect_base.Location = new System.Drawing.Point(38, 142);
             this.txtbx_rect_base.Name = "txtbx_rect_base";
             this.txtbx_rect_base.Size = new System.Drawing.Size(120, 26);
@@ -352,9 +357,9 @@
             this.panel3_rodona.Controls.Add(this.button6);
             this.panel3_rodona.Controls.Add(this.txtbx_rodona_result);
             this.panel3_rodona.Controls.Add(this.txtbx_rodona_radi);
-            this.panel3_rodona.Location = new System.Drawing.Point(221, 109);
+            this.panel3_rodona.Location = new System.Drawing.Point(221, 117);
             this.panel3_rodona.Name = "panel3_rodona";
-            this.panel3_rodona.Size = new System.Drawing.Size(75, 31);
+            this.panel3_rodona.Size = new System.Drawing.Size(84, 20);
             this.panel3_rodona.TabIndex = 4;
             this.panel3_rodona.Visible = false;
             // 
@@ -422,12 +427,13 @@
             // 
             this.txtbx_rodona_result.Location = new System.Drawing.Point(150, 205);
             this.txtbx_rodona_result.Name = "txtbx_rodona_result";
+            this.txtbx_rodona_result.ReadOnly = true;
             this.txtbx_rodona_result.Size = new System.Drawing.Size(162, 26);
             this.txtbx_rodona_result.TabIndex = 2;
             // 
             // txtbx_rodona_radi
             // 
-            this.txtbx_rodona_radi.ContextMenuStrip = this.p1_options;
+            this.txtbx_rodona_radi.ContextMenuStrip = this.menuStrip;
             this.txtbx_rodona_radi.Location = new System.Drawing.Point(150, 140);
             this.txtbx_rodona_radi.Name = "txtbx_rodona_radi";
             this.txtbx_rodona_radi.Size = new System.Drawing.Size(162, 26);
@@ -507,7 +513,7 @@
             // 
             // txtbx_inv_text
             // 
-            this.txtbx_inv_text.ContextMenuStrip = this.p1_options;
+            this.txtbx_inv_text.ContextMenuStrip = this.menuStrip;
             this.txtbx_inv_text.Location = new System.Drawing.Point(88, 142);
             this.txtbx_inv_text.Name = "txtbx_inv_text";
             this.txtbx_inv_text.Size = new System.Drawing.Size(247, 26);
@@ -598,7 +604,7 @@
             // 
             // txtbx_circ_radi
             // 
-            this.txtbx_circ_radi.ContextMenuStrip = this.p1_options;
+            this.txtbx_circ_radi.ContextMenuStrip = this.menuStrip;
             this.txtbx_circ_radi.Location = new System.Drawing.Point(150, 140);
             this.txtbx_circ_radi.Name = "txtbx_circ_radi";
             this.txtbx_circ_radi.Size = new System.Drawing.Size(162, 26);
@@ -678,7 +684,7 @@
             // 
             // txtbx_contar_txt
             // 
-            this.txtbx_contar_txt.ContextMenuStrip = this.p1_options;
+            this.txtbx_contar_txt.ContextMenuStrip = this.menuStrip;
             this.txtbx_contar_txt.Location = new System.Drawing.Point(88, 142);
             this.txtbx_contar_txt.Name = "txtbx_contar_txt";
             this.txtbx_contar_txt.Size = new System.Drawing.Size(247, 26);
@@ -798,7 +804,7 @@
             // 
             // txtbx_ncaracters2
             // 
-            this.txtbx_ncaracters2.ContextMenuStrip = this.p1_options;
+            this.txtbx_ncaracters2.ContextMenuStrip = this.menuStrip;
             this.txtbx_ncaracters2.Location = new System.Drawing.Point(284, 213);
             this.txtbx_ncaracters2.Name = "txtbx_ncaracters2";
             this.txtbx_ncaracters2.Size = new System.Drawing.Size(55, 26);
@@ -806,7 +812,7 @@
             // 
             // txtbx_ncaracters1
             // 
-            this.txtbx_ncaracters1.ContextMenuStrip = this.p1_options;
+            this.txtbx_ncaracters1.ContextMenuStrip = this.menuStrip;
             this.txtbx_ncaracters1.Location = new System.Drawing.Point(116, 213);
             this.txtbx_ncaracters1.Name = "txtbx_ncaracters1";
             this.txtbx_ncaracters1.Size = new System.Drawing.Size(54, 26);
@@ -824,9 +830,9 @@
             this.panel1_triangle.Controls.Add(this.button19);
             this.panel1_triangle.Controls.Add(this.button20);
             this.panel1_triangle.Controls.Add(this.button21);
-            this.panel1_triangle.Location = new System.Drawing.Point(221, 8);
+            this.panel1_triangle.Location = new System.Drawing.Point(221, 12);
             this.panel1_triangle.Name = "panel1_triangle";
-            this.panel1_triangle.Size = new System.Drawing.Size(103, 38);
+            this.panel1_triangle.Size = new System.Drawing.Size(107, 27);
             this.panel1_triangle.TabIndex = 9;
             this.panel1_triangle.Visible = false;
             // 
@@ -864,12 +870,13 @@
             // 
             this.txtbx_trian_result.Location = new System.Drawing.Point(141, 217);
             this.txtbx_trian_result.Name = "txtbx_trian_result";
+            this.txtbx_trian_result.ReadOnly = true;
             this.txtbx_trian_result.Size = new System.Drawing.Size(186, 26);
             this.txtbx_trian_result.TabIndex = 12;
             // 
             // txtbx_trian_alcada
             // 
-            this.txtbx_trian_alcada.ContextMenuStrip = this.p1_options;
+            this.txtbx_trian_alcada.ContextMenuStrip = this.menuStrip;
             this.txtbx_trian_alcada.Location = new System.Drawing.Point(201, 142);
             this.txtbx_trian_alcada.Name = "txtbx_trian_alcada";
             this.txtbx_trian_alcada.Size = new System.Drawing.Size(126, 26);
@@ -877,7 +884,7 @@
             // 
             // txtbx_trian_base
             // 
-            this.txtbx_trian_base.ContextMenuStrip = this.p1_options;
+            this.txtbx_trian_base.ContextMenuStrip = this.menuStrip;
             this.txtbx_trian_base.Location = new System.Drawing.Point(38, 142);
             this.txtbx_trian_base.Name = "txtbx_trian_base";
             this.txtbx_trian_base.Size = new System.Drawing.Size(120, 26);
@@ -935,7 +942,7 @@
             this.panel8_fiboncacci.Controls.Add(this.txtbx_fibonacci_number);
             this.panel8_fiboncacci.Location = new System.Drawing.Point(218, 162);
             this.panel8_fiboncacci.Name = "panel8_fiboncacci";
-            this.panel8_fiboncacci.Size = new System.Drawing.Size(78, 26);
+            this.panel8_fiboncacci.Size = new System.Drawing.Size(87, 38);
             this.panel8_fiboncacci.TabIndex = 10;
             this.panel8_fiboncacci.Visible = false;
             // 
@@ -1004,12 +1011,13 @@
             this.txtbx_fibonacci_result.Location = new System.Drawing.Point(150, 205);
             this.txtbx_fibonacci_result.Multiline = true;
             this.txtbx_fibonacci_result.Name = "txtbx_fibonacci_result";
+            this.txtbx_fibonacci_result.ReadOnly = true;
             this.txtbx_fibonacci_result.Size = new System.Drawing.Size(162, 157);
             this.txtbx_fibonacci_result.TabIndex = 2;
             // 
             // txtbx_fibonacci_number
             // 
-            this.txtbx_fibonacci_number.ContextMenuStrip = this.p1_options;
+            this.txtbx_fibonacci_number.ContextMenuStrip = this.menuStrip;
             this.txtbx_fibonacci_number.Location = new System.Drawing.Point(150, 140);
             this.txtbx_fibonacci_number.Name = "txtbx_fibonacci_number";
             this.txtbx_fibonacci_number.Size = new System.Drawing.Size(162, 26);
@@ -1031,7 +1039,7 @@
             this.Controls.Add(this.treeView1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.p1_options.ResumeLayout(false);
+            this.menuStrip.ResumeLayout(false);
             this.panel2_rectangle.ResumeLayout(false);
             this.panel2_rectangle.PerformLayout();
             this.panel3_rodona.ResumeLayout(false);
@@ -1055,7 +1063,7 @@
         #endregion
 
         private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.ContextMenuStrip p1_options;
+        private System.Windows.Forms.ContextMenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem p1_options_init0;
         private System.Windows.Forms.ToolStripMenuItem p1_increase1;
         private System.Windows.Forms.ToolStripMenuItem p1_decreaset1;

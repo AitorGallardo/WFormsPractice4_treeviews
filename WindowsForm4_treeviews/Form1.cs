@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,6 +14,8 @@ namespace WindowsForm4_treeviews
     public partial class Form1 : Form
     {
         String selectedNode = "";
+
+        Regex isaValidDouble = new Regex(@"-?\d+(?:\.\d+)?");
         public Form1()
         {
             InitializeComponent();
@@ -126,6 +129,8 @@ namespace WindowsForm4_treeviews
                 case "a_triangle":
                     if (checkIfItsDouble(txtbx_trian_base.Text) && checkIfItsDouble(txtbx_trian_alcada.Text))
                     {
+                        txtbx_trian_base.Text = checkIfContainsPoint(txtbx_trian_base.Text);
+                        txtbx_trian_alcada.Text = checkIfContainsPoint(txtbx_trian_alcada.Text);
                         txtbx_trian_result.Text = areaTriangle(Convert.ToDouble(txtbx_trian_base.Text), Convert.ToDouble(txtbx_trian_alcada.Text)).ToString();
                     }
                     else { MessageBox.Show("You must introduce a number in order to do the operation"); }
@@ -190,6 +195,7 @@ namespace WindowsForm4_treeviews
                     break;
             }
         }
+        // calculs
         double areaTriangle(double bse, double alcada)
         {
             return (bse * alcada) / 2;
@@ -242,6 +248,8 @@ namespace WindowsForm4_treeviews
 
             return count;
         }
+        //
+
         bool checkIfItsDouble(String number)
         {
             double dble;
@@ -254,6 +262,57 @@ namespace WindowsForm4_treeviews
             return int.TryParse(number, out integ);
 
         }
+        String checkIfContainsPoint(String number)
+        {
+            if (number.Contains("."))
+            {
+                return replacePointWithComma(number);
+            } else
+            {
+                return number;
+            }
+        }
+        String replacePointWithComma(String number) // points are not parsed into double, thats why we need commas in order to properly convert strings to doubles
+        {
+            int index = number.IndexOf(".");
+            char[] chars = number.ToCharArray();
+            chars[index] = ',';
+            return new string(chars);
+        }
+
+        private void p1_options_init0_Click(object sender, EventArgs e)
+        {
+            ((TextBox)menuStrip.SourceControl).Text = "0";
+        }
+
+        private void p1_increase1_Click(object sender, EventArgs e)
+        {
+            ((TextBox)menuStrip.SourceControl).Text = checkIfContainsPoint(((TextBox)menuStrip.SourceControl).Text);
+            double actualValue = Convert.ToDouble(((TextBox)menuStrip.SourceControl).Text);
+            ((TextBox)menuStrip.SourceControl).Text = (actualValue + 1).ToString();
+
+        }
+
+        private void p1_decreaset1_Click(object sender, EventArgs e)
+        {
+            double actualValue = Convert.ToDouble(((TextBox)menuStrip.SourceControl).Text);
+            ((TextBox)menuStrip.SourceControl).Text = (actualValue - 1).ToString();
+        }
+
+        private void menuStrip_Opening(object sender, CancelEventArgs e)
+        {
+            if (checkIfItsDouble(((TextBox)menuStrip.SourceControl).Text))
+            {
+                p1_options_init0.Enabled = true;
+                p1_increase1.Enabled = true;
+                p1_decreaset1.Enabled = true;
+            } else
+            {
+                p1_options_init0.Enabled = false;
+                p1_increase1.Enabled = false;
+                p1_decreaset1.Enabled = false;
+            }
+        } 
     }
 
 }
