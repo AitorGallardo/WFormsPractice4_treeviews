@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("Àrea del triangle");
-            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("Àrea Rectangle");
-            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("Àrea de la rodona");
-            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("Longitud de la circumferència");
-            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("Àrees i Longituds ", new System.Windows.Forms.TreeNode[] {
-            treeNode56,
-            treeNode57,
-            treeNode58,
-            treeNode59});
-            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("Calcula Invertida");
-            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("Mostrar nº de vocals i consonants");
-            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase");
-            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("Cadenes", new System.Windows.Forms.TreeNode[] {
-            treeNode61,
-            treeNode62,
-            treeNode63});
-            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("Calcula Fibonacci de n números");
-            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("Altres", new System.Windows.Forms.TreeNode[] {
-            treeNode65});
+            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("Àrea del triangle");
+            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("Àrea Rectangle");
+            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("Àrea de la rodona");
+            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("Longitud de la circumferència");
+            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("Àrees i Longituds ", new System.Windows.Forms.TreeNode[] {
+            treeNode67,
+            treeNode68,
+            treeNode69,
+            treeNode70});
+            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("Calcula Invertida");
+            System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("Mostrar nº de vocals i consonants");
+            System.Windows.Forms.TreeNode treeNode74 = new System.Windows.Forms.TreeNode("Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase");
+            System.Windows.Forms.TreeNode treeNode75 = new System.Windows.Forms.TreeNode("Cadenes", new System.Windows.Forms.TreeNode[] {
+            treeNode72,
+            treeNode73,
+            treeNode74});
+            System.Windows.Forms.TreeNode treeNode76 = new System.Windows.Forms.TreeNode("Calcula Fibonacci de n números");
+            System.Windows.Forms.TreeNode treeNode77 = new System.Windows.Forms.TreeNode("Altres", new System.Windows.Forms.TreeNode[] {
+            treeNode76});
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.menuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.p1_options_init0 = new System.Windows.Forms.ToolStripMenuItem();
@@ -154,32 +154,32 @@
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Margin = new System.Windows.Forms.Padding(2);
             this.treeView1.Name = "treeView1";
-            treeNode56.Name = "a_triangle";
-            treeNode56.Text = "Àrea del triangle";
-            treeNode57.Name = "a_rectangle";
-            treeNode57.Text = "Àrea Rectangle";
-            treeNode58.Name = "a_rodona";
-            treeNode58.Text = "Àrea de la rodona";
-            treeNode59.Name = "l_circumf";
-            treeNode59.Text = "Longitud de la circumferència";
-            treeNode60.Name = "areesAndLong";
-            treeNode60.Text = "Àrees i Longituds ";
-            treeNode61.Name = "c_invertida";
-            treeNode61.Text = "Calcula Invertida";
-            treeNode62.Name = "c_vocals-consonants";
-            treeNode62.Text = "Mostrar nº de vocals i consonants";
-            treeNode63.Name = "c_caractersRepetits";
-            treeNode63.Text = "Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase";
-            treeNode64.Name = "cadenes";
-            treeNode64.Text = "Cadenes";
-            treeNode65.Name = "a_fibonacci";
-            treeNode65.Text = "Calcula Fibonacci de n números";
-            treeNode66.Name = "altres";
-            treeNode66.Text = "Altres";
+            treeNode67.Name = "a_triangle";
+            treeNode67.Text = "Àrea del triangle";
+            treeNode68.Name = "a_rectangle";
+            treeNode68.Text = "Àrea Rectangle";
+            treeNode69.Name = "a_rodona";
+            treeNode69.Text = "Àrea de la rodona";
+            treeNode70.Name = "l_circumf";
+            treeNode70.Text = "Longitud de la circumferència";
+            treeNode71.Name = "areesAndLong";
+            treeNode71.Text = "Àrees i Longituds ";
+            treeNode72.Name = "c_invertida";
+            treeNode72.Text = "Calcula Invertida";
+            treeNode73.Name = "c_vocals-consonants";
+            treeNode73.Text = "Mostrar nº de vocals i consonants";
+            treeNode74.Name = "c_caractersRepetits";
+            treeNode74.Text = "Mostrar quantes vegades es repeteixen dos caràcters seguits en una frase";
+            treeNode75.Name = "cadenes";
+            treeNode75.Text = "Cadenes";
+            treeNode76.Name = "a_fibonacci";
+            treeNode76.Text = "Calcula Fibonacci de n números";
+            treeNode77.Name = "altres";
+            treeNode77.Text = "Altres";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode60,
-            treeNode64,
-            treeNode66});
+            treeNode71,
+            treeNode75,
+            treeNode77});
             this.treeView1.Size = new System.Drawing.Size(139, 347);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -748,7 +748,7 @@
             this.panel7_caracters.Location = new System.Drawing.Point(150, 145);
             this.panel7_caracters.Margin = new System.Windows.Forms.Padding(2);
             this.panel7_caracters.Name = "panel7_caracters";
-            this.panel7_caracters.Size = new System.Drawing.Size(358, 191);
+            this.panel7_caracters.Size = new System.Drawing.Size(65, 23);
             this.panel7_caracters.TabIndex = 8;
             this.panel7_caracters.Visible = false;
             // 
