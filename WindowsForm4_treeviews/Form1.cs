@@ -14,8 +14,9 @@ namespace WindowsForm4_treeviews
     public partial class Form1 : Form
     {
         String selectedNode = "";
+        String copiedText = "";
+        
 
-        Regex isaValidDouble = new Regex(@"-?\d+(?:\.\d+)?");
         public Form1()
         {
             InitializeComponent();
@@ -23,10 +24,8 @@ namespace WindowsForm4_treeviews
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            if (!selectedNode.Equals(treeView1.SelectedNode.Name))
-            {
-                clearAllTxtbx(this);
-            }
+
+            
             selectedNode = treeView1.SelectedNode.Name;
             openSelectedPanel(selectedNode);
         }
@@ -78,32 +77,6 @@ namespace WindowsForm4_treeviews
             }
         }
 
-        void hiddeAllPanels() // Iterates on every control of the form and if its a panel, sets visible property to false; 
-        {
-            foreach (Control x in this.Controls)
-            {
-                if (x is Panel)
-                {                
-                    ((Panel)x).Visible = false;
-                }
-            }
-        }
-
-        void clearAllTxtbx(Control cntrl) 
-        {
-            foreach (Control x in cntrl.Controls)
-            {
-                if (x is TextBox)
-                {
-                    ((TextBox)x).Clear();
-                }
-                if (x.Controls.Count > 0) 
-                {                           
-                    clearAllTxtbx(x);  // << It iterates recursively over every control if it has controls on it to check if there is Textboxs inside of it >>
-                }                           // What happens is that this function just checks controls in the form, and the textboxs may be inside of this controls in which case
-            }                                   //we are not aware of their existence    
-        }
-
         private void calculateButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
@@ -117,7 +90,7 @@ namespace WindowsForm4_treeviews
                     clearAllTxtbx(this);
                     break;
                 case "X":
-                    // close current panel
+                    hiddeAllPanels();
                     break;
             }
         }
@@ -157,25 +130,26 @@ namespace WindowsForm4_treeviews
                     else { MessageBox.Show("You must introduce a number in order to do the operation"); }
                     break;
                 case "c_invertida":
-                    if (txtbx_inv_text.Text != null)
+                    if (txtbx_inv_text.Text.Length > 0)
                     {
                         char[] textToCharArr = txtbx_inv_text.Text.ToCharArray();
                         Array.Reverse(textToCharArr);
-                        txtbx_circ_result.Text = textToCharArr.ToString();
+                        txtbx_inv_result.Text = new string(textToCharArr);
                     }
                     else { MessageBox.Show("You must fill the camp"); }
                     break;
                 case "c_vocals-consonants":
-                    if (txtbx_contar_txt.Text != null)
+                    if (txtbx_contar_txt.Text.Length > 0)
                     {
                         int numberOfVowels = txtbx_contar_txt.Text.Count(c => "aeiou".Contains(Char.ToLower(c)));
                         int numberOfConsonants = txtbx_contar_txt.Text.Count(c => "bcdfghjklmnpqrstvxzçñ".Contains(Char.ToLower(c)));
-                        txtbx_contar_result.Text = "N.vocals: " + numberOfVowels + "N.consonants: " + numberOfConsonants;
+                        txtbx_contar_resvocal.Text = numberOfConsonants.ToString();
+                        txtbx_contar_resconson.Text = numberOfConsonants.ToString();
                     }
                     else { MessageBox.Show("You must fill the camp"); }
                     break;
                 case "c_caractersRepetits":
-                    if ((txtbx_ncaracters_txt.Text !=null) && (txtbx_ncaracters1.Text !=null) && (txtbx_ncaracters2.Text != null))
+                    if ((txtbx_ncaracters_txt.Text.Length > 0) && (txtbx_ncaracters1.Text.Length > 0) && (txtbx_ncaracters2.Text.Length > 0))
                     {
                         txtbx_ncaracters_result.Text = searchSeq(txtbx_ncaracters_txt.Text, txtbx_ncaracters1.Text, txtbx_ncaracters2.Text).ToString();
                     }
@@ -186,10 +160,7 @@ namespace WindowsForm4_treeviews
                     if (checkIfItsInteger(txtbx_fibonacci_number.Text))
                     {
                         int number = Int32.Parse(txtbx_fibonacci_number.Text);
-                        List<String> sequencia = new List<String>();
-                        sequencia.Add(fibonacci(number).ToString());
-                        sequencia.Reverse();
-                        txtbx_fibonacci_result.Text = String.Join(",", sequencia.ToArray());
+                        fibonacci(number).ForEach(num => listbx_fibonacci_number.Items.Add(num));
                     }
                     else { MessageBox.Show("You must introduce a number in order to do the operation"); }
                     break;
@@ -212,21 +183,29 @@ namespace WindowsForm4_treeviews
         {
             return 2*Math.PI*radi;
         }
-        int fibonacci(int number)
+        List<int> fibonacci(int number)
         {
-            
-            if(number < 2)
+            int previous_first = 1, previous_second = 1, next = 2;
+            List<int> sequence = new List<int>();
+            sequence.Add(previous_first);
+            sequence.Add(previous_second);
+
+            for (var i = 2; i < number; i++) // we start loop at 2 cause we already got the first 2 numbers on the list
             {
-                return number;
-            } else
-            {
-                return fibonacci(number - 1) + fibonacci(number - 2);
+                next = previous_first + previous_second;
+                previous_first = previous_second;
+                previous_second = next;
+                sequence.Add(next);
             }
+            return sequence;
         }
         int searchSeq(String text, String char1, String char2)
         {
             int count = 0;
             int index = 0;
+            
+            char thischar2 = char2[0];
+
 
             while (index != -1)
             {
@@ -235,10 +214,13 @@ namespace WindowsForm4_treeviews
                 {
                     return count;
                 }
-                else if (text[index + 1].Equals(char2) && ((index+1) <= text.Length))
+                if ((index+1) < text.Length)
                 {
+                    if (text[index + 1].Equals(thischar2))
+                    {                      
+                        count++;
+                    }
                     text = text.Substring(index + 1);
-                    count++;
                 }
                 else
                 {
@@ -248,8 +230,8 @@ namespace WindowsForm4_treeviews
 
             return count;
         }
-        //
-
+        
+        // checks
         bool checkIfItsDouble(String number)
         {
             double dble;
@@ -299,6 +281,8 @@ namespace WindowsForm4_treeviews
             ((TextBox)menuStrip.SourceControl).Text = (actualValue - 1).ToString();
         }
 
+
+        // menustrip options
         private void menuStrip_Opening(object sender, CancelEventArgs e)
         {
             if (checkIfItsDouble(((TextBox)menuStrip.SourceControl).Text))
@@ -312,7 +296,64 @@ namespace WindowsForm4_treeviews
                 p1_increase1.Enabled = false;
                 p1_decreaset1.Enabled = false;
             }
-        } 
+        }
+
+        private void treeView1_Click(object sender, EventArgs e) // in case we close and reopen same panel selectedPanel doesnt trigger so do we need on click
+        {
+            
+            if (!selectedNode.Equals(treeView1.SelectedNode.Name))
+            {
+                clearAllTxtbx(this);
+            }
+            selectedNode = treeView1.SelectedNode.Name;
+            openSelectedPanel(selectedNode);
+        }
+
+        private void p1_copy_Click(object sender, EventArgs e)
+        {
+            this.copiedText = ((TextBox)menuStrip.SourceControl).Text;
+
+        }
+
+        private void p1_cut_Click(object sender, EventArgs e)
+        {
+            this.copiedText = ((TextBox)menuStrip.SourceControl).Text;
+            ((TextBox)menuStrip.SourceControl).Text = "";
+        }
+
+        private void p1_paste_Click(object sender, EventArgs e)
+        {
+            ((TextBox)menuStrip.SourceControl).Text = this.copiedText;
+        }
+
+        // other
+        void hiddeAllPanels() // Iterates on every control of the form and if its a panel, sets visible property to false; 
+        {
+            foreach (Control x in this.Controls)
+            {
+                if (x is Panel)
+                {
+                    ((Panel)x).Visible = false;
+                }
+            }
+        }
+
+        void clearAllTxtbx(Control cntrl)
+        {
+            foreach (Control x in cntrl.Controls)
+            {
+                if (x is TextBox)
+                {
+                    ((TextBox)x).Clear();
+                }
+                if (x.Controls.Count > 0)
+                {
+                    clearAllTxtbx(x);  // << It iterates recursively over every control if it has controls on it to check if there is Textboxs inside of it >>
+                }                           // What happens is that this function just checks controls in the form, and the textboxs may be inside of this controls in which case
+            }                                   //we are not aware of their existence    
+            listbx_fibonacci_number.Items.Clear();
+        }
+
     }
 
 }
